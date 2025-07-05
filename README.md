@@ -1,2 +1,2 @@
 # resinbynaaz
-joint project @
+joint project
