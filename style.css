@@ -81,6 +81,7 @@ body {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
 }
 
 .banner-button {
@@ -97,18 +98,30 @@ body {
   background-color: #9a5a64;
 }
 
+.trending-heading {
+    margin-left: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem;
+    color: #000000; /* match your brand color */
+    /* font-family: "Great Vibes", cursive; */
+}
+
+
 .product-slider {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   width: 100%;
   padding: 2rem 0;
+   scroll-behavior: smooth;
 }
 
 .slider-track {
   display: flex;
   gap: 2rem;
   padding: 0 2rem;
+
 }
 
 .product-card {
@@ -118,11 +131,11 @@ body {
     scroll-snap-align: start;
     background: #fff;
     border-radius: 0px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    /* box-shadow: 0 4px 15px rgba(0,0,0,0.1); */
     text-align: center;
     overflow: hidden;
     width: 380px; /* fixed width for consistent sliding */
-    height: 450px;
+    height: 550px;
     transition: transform 0.3s ease;
 }
 
@@ -132,9 +145,11 @@ body {
 
 .product-card img {
   width: 100%;
-  height: 300px;
+  height: 450px;
   object-fit:cover;
 }
+
+
 
 .product-card h3 {
   margin: 1rem 0 0.5rem;
@@ -163,10 +178,54 @@ body {
   background-color: #9a5a64;
 }
 
+/* hamburger icon for responsive site */
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Media query */
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid #ccc;
+  }
+  .menu.show {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .product-card {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-card {
+    width: 90%;
+    height: auto;
+  }
+}
+            
 /* Footer */
 
 .footer {
-  background-color: #8f8283;
+  background-color: #dad9d9;
   color: rgb(0, 0, 0);
   padding: 2rem 0 1rem;
   font-size: 0.95rem;
@@ -188,13 +247,13 @@ body {
 
 .footer-section h4 {
   margin-bottom: 1rem;
-  color:#ffffff;
+  color:#000000;
 }
 
 .footer-section p,
 .footer-section a,
 .footer-section li {
-  color: #ccc;
+  color: #4b4b4b;
   text-decoration: none;
   margin-bottom: 0.5rem;
 }
@@ -207,7 +266,7 @@ body {
 
 .footer-section ul li a:hover,
 .footer-section a:hover {
-  color: #ffffff;
+  color: #000000;
 }
 
 .social-icons a {
@@ -222,7 +281,8 @@ body {
 
 .footer-bottom {
   text-align: center;
-  border-top: 1px solid #8a8a8a;
+  /* border-top: 1px solid #8a8a8a; */
   padding-top: 1rem;
-  color: #ffffff;
+  color: #000000;
 }
+
