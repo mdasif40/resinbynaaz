@@ -16,24 +16,33 @@
         <div class="menu">
             <a href="#">Home</a>
             <a href="#">Shop</a>
-            <a href="#">Categories</a>
+            <div class="dropdown">
+                <a href="#">Categories</a>
+                <div class="dropdown-menu">
+                    <a href="#jhumka">Jhumka</a>
+                    <a href="#pendant">Pendant</a>
+                    <a href="#earrings">Earrings</a>
+                    <a href="#keychains">Keychains</a>
+                    <a href="#rings">Rings</a>
+                </div>
+            </div>
             <a href="#">Contact</a>
         </div>
         <div class="icons">
             <span>
+                <!-- Cart Icon -->
                 <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#000000">
                     <path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h660L669-440H324l-44 80h480v80H145l119-216-144-304H40v-80h130l38 80Zm134 280h280-280Z"/>
                 </svg>
             </span>
             <span class="login">
+                <!-- User Icon -->
                 <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#000000">
                     <path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/>
                 </svg>
             </span>
         </div>
-        <div class="hamburger" onclick="toggleMenu()">
-            ☰
-        </div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
     </nav>
 
     <!-- Banner -->
@@ -44,43 +53,236 @@
         <a href="#" class="banner-button">Shop Now</a>
     </section>
 
+    <!-- Trending heading -->
     <h2 class="trending-heading">Trending</h2>
-   
+
     <!-- Product cards -->
     <section class="product-slider">
-        <div class="slider-track">
+  <div class="slider-track" id="slider-track">
+    <div class="product-card">
+      <img src="product media/product1.png" alt="Product 1">
+      <h3>Product Name 1</h3>
+      <p>mehanga hai :)</p>
+    </div>
+    <div class="product-card">
+      <img src="product media/product2.png" alt="Product 2">
+      <h3>Product Name 2</h3>
+      <p>mehanga hai :)</p>
+    </div>
+    <div class="product-card">
+      <img src="product media/product3.png" alt="Product 3">
+      <h3>Product Name 3</h3>
+      <p>mehanga hai :)</p>
+    </div>
+    <div class="product-card">
+      <img src="product media/product4.png" alt="Product 4">
+      <h3>Product Name 4</h3>
+      <p>mehanga hai :)</p>
+    </div>
+    <div class="product-card">
+      <img src="product media/product5.png" alt="Product 5">
+      <h3>Product Name 5</h3>
+      <p>mehanga hai :)</p>
+    </div>
+    <div class="product-card">
+      <img src="product media/product6.png" alt="Product 6">
+      <h3>Product Name 6</h3>
+      <p>mehanga hai :)</p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Jhumka Section -->
+<section id="jhumka" class="category-section">
+  <h2>Jhumka Collection</h2>
+  <p>Discover our beautiful handcrafted jhumkas.</p>
+  <div class="vertical-slider">
+    <div class="vertical-track">
+      <!-- Jhumka product cards -->
+      <!-- Example: -->
+        <div class="vertical-row">
             <div class="product-card">
-                <img src="product image/product1.png" alt="Product 1">
-                <h3>Product Name 1</h3>
-                <p>mehanga hai :)</p>
+                <img src="product media/jhumka/jhumka1.jpg" alt="Jhumka 1">
+                <h3>Jhumka 1</h3>
+                <p>Beautiful handcrafted jhumka :)</p>
             </div>
             <div class="product-card">
-                <img src="product image/product2.png" alt="Product 2">
-                <h3>Product Name 2</h3>
-                <p>mehanga hai :)</p>
+                <img src="product media/jhumka/jhumka2.jpg" alt="Jhumka 2">
+                <h3>Jhumka 2</h3>
+                <p>Beautiful handcrafted jhumka :)</p>
             </div>
             <div class="product-card">
-                <img src="product image/product3.png" alt="Product 3">
-                <h3>Product Name 3</h3>
-                <p>mehanga hai :)</p>
-            </div>
-            <div class="product-card">
-                <img src="product image/product4.png" alt="Product 4">
-                <h3>Product Name 4</h3>
-                <p>mehanga hai :)</p>
-            </div>
-            <div class="product-card">
-                <img src="product image/product5.png" alt="Product 5">
-                <h3>Product Name 5</h3>
-                <p>mehanga hai :)</p>
-            </div>
-            <div class="product-card">
-                <img src="product image/product6.png" alt="Product 6">
-                <h3>Product Name 6</h3>
-                <p>mehanga hai :)</p>
+                <img src="product media/jhumka/jhumka3.jpg" alt="Jhumka 3">
+                <h3>Jhumka 3</h3>
+                <p>Beautiful handcrafted jhumka :)</p>
             </div>
         </div>
-    </section>
+        
+        <div class="vertical-row">
+            <div class="product-card">
+                <img src="product media/jhumka/jhumka4.jpg" alt="Jhumka 4">
+                <h3>Jhumka 4</h3>
+                <p>Beautiful handcrafted jhumka :)</p>
+            </div>
+            <div class="product-card">
+                <img src="product media/jhumka/jhumka5.jpg" alt="Jhumka 5">
+                <h3>Jhumka 5</h3>
+                <p>Beautiful handcrafted jhumka :)</p>
+            </div>
+            <div class="product-card">
+                <img src="product media/jhumka/jhumka6.jpg" alt="Jhumka 6">
+                <h3>Jhumka 6</h3>
+                <p>Beautiful handcrafted jhumka :)</p>
+            </div>
+        </div>
+        
+      <div class="vertical-row">
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka7.jpg" alt="Jhumka 7">
+        <h3>Jhumka 7</h3>
+        <p>Beautiful handcrafted jhumka :)</p>
+      </div>
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka8.jpg" alt="Jhumka 8">
+        <h3>Jhumka 8</h3>
+        <p>Beautiful handcrafted jhumka :)</p>
+      </div>
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka9.jpg" alt="Jhumka 9">
+        <h3>Jhumka 9</h3>
+        <p>Beautiful handcrafted jhumka :)</p>
+      </div>
+    </div>
+
+    <div class="vertical-row">
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka10.jpg" alt="Jhumka 10">
+        <h3>Jhumka 10</h3>
+        <p>Beautiful handcrafted jhumka :)</p>
+      </div>
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka11.jpg" alt="Jhumka 11">
+        <h3>Jhumka 11</h3>
+        <p>Beautiful handcrafted jhumka :)</p>
+      </div>
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka12.jpg" alt="Jhumka 12">
+        <h3>Jhumka 12</h3>
+        <p>Beautiful handcrafted jhumka :)</p>
+      </div>
+    </div>
+      
+    <div class="vertical-row">
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka13.jpg" alt="Jhumka 13">
+        <h3>Jhumka 13</h3>
+        <p>Beautiful handcrafted jhumka :)</p>
+      </div>
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka14.jpg" alt="Jhumka 14">
+        <h3>Jhumka 14</h3>
+        <p>Beautiful handcrafted jhumka :)</p>
+      </div>
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka15.jpg" alt="Jhumka 15">
+        <h3>Jhumka 15</h3>
+        <p>Beautiful handcrafted jhumka :)</p>
+      </div>
+    </div>
+
+    <div class="vertical-row">
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka16.jpg" alt="Jhumka 16">
+        <h3>Jhumka 16</h3>
+        <p>Beautiful handcrafted jhumka :)</p>
+      </div>
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka17.jpg" alt="Jhumka 17">
+        <h3>Jhumka 17</h3>
+        <p>Beautiful handcrafted jhumka :)</p>
+      </div>
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka18.jpg" alt="Jhumka 18">
+        <h3>Jhumka 18</h3>
+        <p>Beautiful handcrafted jhumka :)</p>
+      </div>
+    </div>
+
+    <div class="vertical-row">
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka19.jpg" alt="Jhumka 19">
+        <h3>Jhumka 19</h3>
+        <p>Beautiful handcrafted jhumka :)</p>
+      </div>
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka20.jpg" alt="Jhumka 20">
+        <h3>Jhumka 20</h3>
+        <p>Beautiful handcrafted jhumka :)</p>
+      </div>
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka21.jpg" alt="Jhumka 21">
+        <h3>Jhumka 21</h3>
+        <p>Beautiful handcrafted jhumka :)</p>
+      </div>
+    </div>
+
+    <div class="vertical-row">
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka22.jpg" alt="Jhumka 22">
+        <h3>Jhumka 22</h3>
+        <p>Beautiful handcrafted jhumka :)</p>
+      </div>
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka23.jpg" alt="Jhumka 23">
+        <h3>Jhumka 23</h3>
+        <p>Beautiful handcrafted jhumka :)</p>
+      </div>
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka24.jpg" alt="Jhumka 24">
+        <h3>Jhumka 24</h3>
+        <p>Beautiful handcrafted jhumka :)</p>
+      </div>
+    </div>
+
+      <div class="vertical-row">
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka25.jpg" alt="Jhumka 25">
+        <h3>Jhumka 25</h3>
+        <p>Beautiful handcrafted jhumka :)</p>
+      </div>
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka26.jpg" alt="Jhumka 26">
+        <h3>Jhumka 26</h3>
+        <p>Beautiful handcrafted jhumka :)</p>
+      </div>
+      </div>
+
+      
+    </div>
+  </div>
+</section>
+
+
+<!-- Pendant Section -->
+<section id="pendant" class="category-section">
+    <h2>Pendant Collection</h2>
+    <p>Explore elegant and unique pendants.</p>
+</section>
+
+
+<!-- Keychains Section -->
+<section id="keychains" class="category-section">
+    <h2>Keychains Collection</h2>
+    <p>Shop creative and fun keychains.</p>
+</section>
+
+<!-- Rings Section -->
+<section id="rings" class="category-section">
+    <h2>Rings Collection</h2>
+    <p>Adorn your fingers with our stylish rings.</p>
+</section>
+
 
     <!-- Footer -->
     <footer class="footer">
@@ -103,23 +305,26 @@
                 <h4>Follow Us</h4>
                 <div class="social-icons">
                     <a href="https://www.instagram.com/resinbynaaz" aria-label="Instagram">
-                        <img src="product image/instagram.png" alt="instagram">
+                        <img src="product media/instagram.png" alt="instagram">
                     </a>
                     <a href="https://www.linkedin.com/in/mdasif04" aria-label="LinkedIn">
-                        <img src="product image/linkedin.png" alt="linkedin">
+                        <img src="product media/linkedin.png" alt="linkedin">
                     </a>
                     <a href="https://www.github.com/mdasif40" aria-label="GitHub">
-                        <img src="product image/github.png" alt="github">
+                        <img src="product media/github.png" alt="github">
                     </a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 resinbynaaz. All rights reserved.<br><br>designed by: <a href="https://www.instagram.com/mdasif04">Vegetarian</a></p>
+            <p>&copy; 2025 resinbynaaz. All rights reserved.<br><br>Designed by: <a href="https://www.instagram.com/mdasif04">Vegetarian</a></p>
         </div>
     </footer>
 
-    <!-- JavaScript link -->
+    <!-- JavaScript -->
     <script src="java.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script>
+
 </body>
 </html>
