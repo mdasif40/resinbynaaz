@@ -11,6 +11,7 @@
 </head>
 <body>
     <!-- Navigation bar -->
+    <header>
     <nav class="navbar">
         <div class="logo">resinbynaaz</div>
         <div class="menu">
@@ -21,9 +22,9 @@
                 <div class="dropdown-menu">
                     <a href="#jhumka">Jhumka</a>
                     <a href="#pendant">Pendant</a>
-                    <a href="#earrings">Earrings</a>
-                    <a href="#keychains">Keychains</a>
-                    <a href="#rings">Rings</a>
+                    <!-- <a href="#earing">Earrings</a> -->
+                    <a href="#keychain">Keychains</a>
+                    <a href="#ring">Rings</a>
                 </div>
             </div>
             <a href="#">Contact</a>
@@ -44,245 +45,302 @@
         </div>
         <div class="hamburger" onclick="toggleMenu()">☰</div>
     </nav>
+    </header>
 
     <!-- Banner -->
     <section class="banner">
         <div class="banner-content">
-            <img src="" alt="">
-        </div>
-        <a href="#" class="banner-button">Shop Now</a>
+          <a href="#jhumka"><img src="" alt="img"></a>
+        </div>   
     </section>
 
-    <!-- Trending heading -->
-    <h2 class="trending-heading">Trending</h2>
-
     <!-- Product cards -->
-    <section class="product-slider">
-  <div class="slider-track" id="slider-track">
-    <div class="product-card">
-      <img src="product media/product1.png" alt="Product 1">
-      <h3>Product Name 1</h3>
-      <p>mehanga hai :)</p>
+<div><h2 class="trending-heading">Trending</h2></div>
+  <section class="product-slider">
+    <div class="slider-track">
+        <div class="product-card">
+          <img src="product media/product1.png" alt="Product 1" loading="lazy">
+          <div class="product-overlay">
+              <div class="overlay-icon" title="Add to Favourite">
+                ❤️
+              </div>
+              <div class="overlay-icon" title="Add to Cart">
+                🛒
+              </div>
+              <div class="overlay-icon" title="View Details">
+                🔍
+              </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="product media/product2.png" alt="Product 2"loading="lazy">
+          <div class="product-overlay">
+              <div class="overlay-icon" title="Add to Favourite">
+                ❤️
+              </div>
+              <div class="overlay-icon" title="Add to Cart">
+                🛒
+              </div>
+              <div class="overlay-icon" title="View Details">
+                🔍
+              </div>
+            </div>
+        </div>
+        <div class="product-card">
+          <img src="product media/product3.png" alt="Product 3"loading="lazy">
+          <div class="product-overlay">
+    <div class="overlay-icon" title="Add to Favourite">
+      ❤️
     </div>
-    <div class="product-card">
-      <img src="product media/product2.png" alt="Product 2">
-      <h3>Product Name 2</h3>
-      <p>mehanga hai :)</p>
+    <div class="overlay-icon" title="Add to Cart">
+      🛒
     </div>
-    <div class="product-card">
-      <img src="product media/product3.png" alt="Product 3">
-      <h3>Product Name 3</h3>
-      <p>mehanga hai :)</p>
-    </div>
-    <div class="product-card">
-      <img src="product media/product4.png" alt="Product 4">
-      <h3>Product Name 4</h3>
-      <p>mehanga hai :)</p>
-    </div>
-    <div class="product-card">
-      <img src="product media/product5.png" alt="Product 5">
-      <h3>Product Name 5</h3>
-      <p>mehanga hai :)</p>
-    </div>
-    <div class="product-card">
-      <img src="product media/product6.png" alt="Product 6">
-      <h3>Product Name 6</h3>
-      <p>mehanga hai :)</p>
+    <div class="overlay-icon" title="View Details">
+      🔍
     </div>
   </div>
+        </div>
+        <div class="product-card">
+          <img src="product media/product4.png" alt="Product 4"loading="lazy">
+          <div class="product-overlay">
+    <div class="overlay-icon" title="Add to Favourite">
+      ❤️
+    </div>
+    <div class="overlay-icon" title="Add to Cart">
+      🛒
+    </div>
+    <div class="overlay-icon" title="View Details">
+      🔍
+    </div>
+  </div>
+        </div>
+        <div class="product-card">
+          <img src="product media/product5.png" alt="Product 5"loading="lazy">
+          <div class="product-overlay">
+    <div class="overlay-icon" title="Add to Favourite">
+      ❤️
+    </div>
+    <div class="overlay-icon" title="Add to Cart">
+      🛒
+    </div>
+    <div class="overlay-icon" title="View Details">
+      🔍
+    </div>
+  </div>
+        </div>
+        <div class="product-card">
+          <img src="product media/product6.png" alt="Product 6" loading="lazy">
+          
+        </div>
+    </div>
 </section>
 
 
     <!-- Jhumka Section -->
-<section id="jhumka" class="category-section">
-  <h2>Jhumka Collection</h2>
-  <p>Discover our beautiful handcrafted jhumkas.</p>
-  <div class="vertical-slider">
-    <div class="vertical-track">
-      <!-- Jhumka product cards -->
-      <!-- Example: -->
-        <div class="vertical-row">
+     <div><h2 class="trending-heading" id="jhumka" >Jhumka</h2></div>
+<section class="product-slider">
+    <div class="slider-track">
             <div class="product-card">
-                <img src="product media/jhumka/jhumka1.jpg" alt="Jhumka 1">
-                <h3>Jhumka 1</h3>
-                <p>Beautiful handcrafted jhumka :)</p>
+                <img src="product media/jhumka/jhumka1.jpg" alt="Jhumka 1" loading="lazy">
             </div>
             <div class="product-card">
-                <img src="product media/jhumka/jhumka2.jpg" alt="Jhumka 2">
-                <h3>Jhumka 2</h3>
-                <p>Beautiful handcrafted jhumka :)</p>
+                <img src="product media/jhumka/jhumka2.jpg" alt="Jhumka 2" loading="lazy">
             </div>
             <div class="product-card">
-                <img src="product media/jhumka/jhumka3.jpg" alt="Jhumka 3">
-                <h3>Jhumka 3</h3>
-                <p>Beautiful handcrafted jhumka :)</p>
-            </div>
-        </div>
-        
-        <div class="vertical-row">
-            <div class="product-card">
-                <img src="product media/jhumka/jhumka4.jpg" alt="Jhumka 4">
-                <h3>Jhumka 4</h3>
-                <p>Beautiful handcrafted jhumka :)</p>
+                <img src="product media/jhumka/jhumka3.jpg" alt="Jhumka 3" loading="lazy">
             </div>
             <div class="product-card">
-                <img src="product media/jhumka/jhumka5.jpg" alt="Jhumka 5">
-                <h3>Jhumka 5</h3>
-                <p>Beautiful handcrafted jhumka :)</p>
+                <img src="product media/jhumka/jhumka4.jpg" alt="Jhumka 4" loading="lazy">
             </div>
             <div class="product-card">
-                <img src="product media/jhumka/jhumka6.jpg" alt="Jhumka 6">
-                <h3>Jhumka 6</h3>
-                <p>Beautiful handcrafted jhumka :)</p>
+                <img src="product media/jhumka/jhumka5.jpg" alt="Jhumka 5" loading="lazy">
             </div>
-        </div>
-        
-      <div class="vertical-row">
+            <div class="product-card">
+                <img src="product media/jhumka/jhumka6.jpg" alt="Jhumka 6" loading="lazy">
+            </div>
       <div class="product-card">
-        <img src="product media/jhumka/jhumka7.jpg" alt="Jhumka 7">
-        <h3>Jhumka 7</h3>
-        <p>Beautiful handcrafted jhumka :)</p>
+        <img src="product media/jhumka/jhumka7.jpg" alt="Jhumka 7" loading="lazy">
       </div>
       <div class="product-card">
-        <img src="product media/jhumka/jhumka8.jpg" alt="Jhumka 8">
-        <h3>Jhumka 8</h3>
-        <p>Beautiful handcrafted jhumka :)</p>
+        <img src="product media/jhumka/jhumka8.jpg" alt="Jhumka 8" loading="lazy">
       </div>
       <div class="product-card">
-        <img src="product media/jhumka/jhumka9.jpg" alt="Jhumka 9">
-        <h3>Jhumka 9</h3>
-        <p>Beautiful handcrafted jhumka :)</p>
-      </div>
-    </div>
-
-    <div class="vertical-row">
-      <div class="product-card">
-        <img src="product media/jhumka/jhumka10.jpg" alt="Jhumka 10">
-        <h3>Jhumka 10</h3>
-        <p>Beautiful handcrafted jhumka :)</p>
-      </div>
-      <div class="product-card">
-        <img src="product media/jhumka/jhumka11.jpg" alt="Jhumka 11">
-        <h3>Jhumka 11</h3>
-        <p>Beautiful handcrafted jhumka :)</p>
-      </div>
-      <div class="product-card">
-        <img src="product media/jhumka/jhumka12.jpg" alt="Jhumka 12">
-        <h3>Jhumka 12</h3>
-        <p>Beautiful handcrafted jhumka :)</p>
-      </div>
-    </div>
-      
-    <div class="vertical-row">
-      <div class="product-card">
-        <img src="product media/jhumka/jhumka13.jpg" alt="Jhumka 13">
-        <h3>Jhumka 13</h3>
-        <p>Beautiful handcrafted jhumka :)</p>
-      </div>
-      <div class="product-card">
-        <img src="product media/jhumka/jhumka14.jpg" alt="Jhumka 14">
-        <h3>Jhumka 14</h3>
-        <p>Beautiful handcrafted jhumka :)</p>
-      </div>
-      <div class="product-card">
-        <img src="product media/jhumka/jhumka15.jpg" alt="Jhumka 15">
-        <h3>Jhumka 15</h3>
-        <p>Beautiful handcrafted jhumka :)</p>
-      </div>
-    </div>
-
-    <div class="vertical-row">
-      <div class="product-card">
-        <img src="product media/jhumka/jhumka16.jpg" alt="Jhumka 16">
-        <h3>Jhumka 16</h3>
-        <p>Beautiful handcrafted jhumka :)</p>
-      </div>
-      <div class="product-card">
-        <img src="product media/jhumka/jhumka17.jpg" alt="Jhumka 17">
-        <h3>Jhumka 17</h3>
-        <p>Beautiful handcrafted jhumka :)</p>
-      </div>
-      <div class="product-card">
-        <img src="product media/jhumka/jhumka18.jpg" alt="Jhumka 18">
-        <h3>Jhumka 18</h3>
-        <p>Beautiful handcrafted jhumka :)</p>
-      </div>
-    </div>
-
-    <div class="vertical-row">
-      <div class="product-card">
-        <img src="product media/jhumka/jhumka19.jpg" alt="Jhumka 19">
-        <h3>Jhumka 19</h3>
-        <p>Beautiful handcrafted jhumka :)</p>
-      </div>
-      <div class="product-card">
-        <img src="product media/jhumka/jhumka20.jpg" alt="Jhumka 20">
-        <h3>Jhumka 20</h3>
-        <p>Beautiful handcrafted jhumka :)</p>
-      </div>
-      <div class="product-card">
-        <img src="product media/jhumka/jhumka21.jpg" alt="Jhumka 21">
-        <h3>Jhumka 21</h3>
-        <p>Beautiful handcrafted jhumka :)</p>
-      </div>
-    </div>
-
-    <div class="vertical-row">
-      <div class="product-card">
-        <img src="product media/jhumka/jhumka22.jpg" alt="Jhumka 22">
-        <h3>Jhumka 22</h3>
-        <p>Beautiful handcrafted jhumka :)</p>
-      </div>
-      <div class="product-card">
-        <img src="product media/jhumka/jhumka23.jpg" alt="Jhumka 23">
-        <h3>Jhumka 23</h3>
-        <p>Beautiful handcrafted jhumka :)</p>
-      </div>
-      <div class="product-card">
-        <img src="product media/jhumka/jhumka24.jpg" alt="Jhumka 24">
-        <h3>Jhumka 24</h3>
-        <p>Beautiful handcrafted jhumka :)</p>
-      </div>
-    </div>
-
-      <div class="vertical-row">
-      <div class="product-card">
-        <img src="product media/jhumka/jhumka25.jpg" alt="Jhumka 25">
-        <h3>Jhumka 25</h3>
-        <p>Beautiful handcrafted jhumka :)</p>
-      </div>
-      <div class="product-card">
-        <img src="product media/jhumka/jhumka26.jpg" alt="Jhumka 26">
-        <h3>Jhumka 26</h3>
-        <p>Beautiful handcrafted jhumka :)</p>
-      </div>
+        <img src="product media/jhumka/jhumka9.jpg" alt="Jhumka 9" loading="lazy">
       </div>
 
-      
-    </div>
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka10.jpg" alt="Jhumka 10" loading="lazy">
+      </div>
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka11.jpg" alt="Jhumka 11" loading="lazy">
+      </div>
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka12.jpg" alt="Jhumka 12" loading="lazy">
+      </div>
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka13.jpg" alt="Jhumka 13" loading="lazy">
+      </div>
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka14.jpg" alt="Jhumka 14" loading="lazy">
+      </div>
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka15.jpg" alt="Jhumka 15" loading="lazy">
+      </div>
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka16.jpg" alt="Jhumka 16" loading="lazy">
+      </div>
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka17.jpg" alt="Jhumka 17" loading="lazy">
+      </div>
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka18.jpg" alt="Jhumka 18" loading="lazy">
+      </div>
+
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka19.jpg" alt="Jhumka 19" loading="lazy">
+      </div>
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka20.jpg" alt="Jhumka 20" loading="lazy">
+      </div>
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka21.jpg" alt="Jhumka 21" loading="lazy">
+      </div>
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka22.jpg" alt="Jhumka 22" loading="lazy">
+      </div>
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka23.jpg" alt="Jhumka 23" loading="lazy">
+      </div>
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka24.jpg" alt="Jhumka 24" loading="lazy">
+      </div>
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka25.jpg" alt="Jhumka 25" loading="lazy">
+      </div>
+      <div class="product-card">
+        <img src="product media/jhumka/jhumka26.jpg" alt="Jhumka 26" loading="lazy">
+      </div>
   </div>
 </section>
 
 
 <!-- Pendant Section -->
-<section id="pendant" class="category-section">
-    <h2>Pendant Collection</h2>
-    <p>Explore elegant and unique pendants.</p>
+ <div><h2 class="trending-heading" id="pendant">Pendant</h2></div>
+<section class="product-slider">
+    <div class="slider-track">
+        <div class="product-card">
+          <img src="product media/pendant/pendant1.jpg" alt="Product 1">
+        </div>
+        <div class="product-card">
+          <img src="product media/pendant/pendant15.jpg" alt="Product 1">
+        </div>
+        <div class="product-card">
+          <img src="product media/pendant/pendant3.jpg" alt="Product 1">
+        </div>
+        <div class="product-card">
+          <img src="product media/pendant/pendant4.jpg" alt="Product 1">
+        </div>
+        <div class="product-card">
+          <img src="product media/pendant/pendant5.jpg" alt="Product 1">
+        </div>
+        <div class="product-card">
+          <img src="product media/pendant/pendant6.jpg" alt="Product 1">
+        </div>
+        <div class="product-card">
+          <img src="product media/pendant/pendant2.jpg" alt="Product 1">
+        </div>
+        <div class="product-card">
+          <img src="product media/pendant/pendant7.jpg" alt="Product 1">
+        </div>
+        <div class="product-card">
+          <img src="product media/pendant/pendant8.jpg" alt="Product 1">
+        </div>
+        <div class="product-card">
+          <img src="product media/pendant/pendant9.jpg" alt="Product 1">
+        </div>
+        <div class="product-card">
+          <img src="product media/pendant/pendant10.jpg" alt="Product 1">
+        </div>
+        <div class="product-card">
+          <img src="product media/pendant/pendant11.jpg" alt="Product 1">
+        </div>
+        <div class="product-card">
+          <img src="product media/pendant/pendant12.jpg" alt="Product 1">
+        </div>
+        <div class="product-card">
+          <img src="product media/pendant/pendant13.jpg" alt="Product 1">
+        </div>
+        <div class="product-card">
+          <img src="product media/pendant/pendant14.jpg" alt="Product 1">
+        </div>
+
+    </div>
 </section>
 
 
 <!-- Keychains Section -->
-<section id="keychains" class="category-section">
-    <h2>Keychains Collection</h2>
-    <p>Shop creative and fun keychains.</p>
+  <div><h2 class="trending-heading" id="keychain">Key chain</h2></div>
+<section class="product-slider">
+    <div class="slider-track">
+        <div class="product-card">
+          <img src="product media/keychain/keychain1.jpg" alt="Product 1" loading="lazy">
+        </div>
+        <div class="product-card">
+          <img src="product media/keychain/keychain2.jpg" alt="Product 1" loading="lazy">
+        </div>
+        <div class="product-card">
+          <img src="product media/keychain/keychain3.jpg" alt="Product 1" loading="lazy">
+        </div>
+        <div class="product-card">
+          <img src="product media/keychain/keychain4.jpg" alt="Product 4" loading="lazy">
+        </div>
+        <div class="product-card">
+          <img src="product media/keychain/keychain5.jpg" alt="Product 5" loading="lazy">
+        </div>
+        <div class="product-card">
+          <img src="product media/keychain/keychain6.jpg" alt="Product 6" loading="lazy">
+        </div>
+        <div class="product-card">
+          <img src="product media/keychain/keychain7.jpg" alt="Product 7" loading="lazy">
+        </div>
+        <div class="product-card">
+          <img src="product media/keychain/keychain8.jpg" alt="Product 8" loading="lazy">
+        </div>
+        <div class="product-card">
+          <img src="product media/keychain/keychain9.jpg" alt="Product 9" loading="lazy">
+        </div>
+        <div class="product-card">
+          <img src="product media/keychain/keychain10.jpg" alt="Product 10" loading="lazy">
+        </div>
+        <div class="product-card">
+          <img src="product media/keychain/keychain11.jpg" alt="Product 11" loading="lazy">
+        </div>
+        <div class="product-card">
+          <img src="product media/keychain/keychain12.jpg" alt="Product 12" loading="lazy">
+        </div>
+        <div class="product-card">
+          <img src="product media/keychain/keychain13.jpg" alt="Product 13" loading="lazy">
+        </div>
+    </div>  
 </section>
 
 <!-- Rings Section -->
-<section id="rings" class="category-section">
-    <h2>Rings Collection</h2>
-    <p>Adorn your fingers with our stylish rings.</p>
+  <div><h2 class="trending-heading" id="ring">Rings</h2></div>
+<section class="product-slider">
+        <div class="product-card">
+          <img src="product media/ring/ring1.jpg" alt="Product 1" loading="lazy">
+        </div>
+        <div class="product-card">
+          <img src="product media/ring/ring2.jpg" alt="Product 1" loading="lazy">
+        </div>
+        <div class="product-card">
+          <img src="product media/ring/ring3.jpg" alt="Product 1" loading="lazy">
+        </div>
+        <div class="product-card">
+          <img src="product media/ring/ring4.jpg" alt="Product 1" loading="lazy">
+        </div>
+    </div>
 </section>
-
 
     <!-- Footer -->
     <footer class="footer">
@@ -323,8 +381,5 @@
 
     <!-- JavaScript -->
     <script src="java.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script>
-
 </body>
 </html>
